@@ -4,6 +4,6 @@
   tasks:
     - name: Add User
       win_user:
-        name: ansible
-        password: "@ns1bl3"
+        name: UsuarioAWX
+        password: "A123456a"
         state: present
