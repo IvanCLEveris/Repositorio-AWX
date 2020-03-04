@@ -1,4 +1,5 @@
 - name: Add a user
+  hosts: all
   gather_facts: false
   tasks:
     - name: Add User
