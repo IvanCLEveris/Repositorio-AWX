@@ -1,9 +1,8 @@
 - name: Add a user
-  host: all
   gather_facts: false
   tasks:
     - name: Add User
       win_user:
-        name: AWX
+        name: UsuarioAWX
         password: "A123456a"
         state: present
