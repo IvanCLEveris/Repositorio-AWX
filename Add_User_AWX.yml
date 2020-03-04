@@ -1,6 +1,9 @@
-- name: Hello World Sample
-  hosts: all
+- name: Add a user
+  host: all
+  gather_facts: false
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+    - name: Add User
+      win_user:
+        name: AWX
+        password: "A123456a"
+        state: present
