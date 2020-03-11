@@ -1,0 +1,5 @@
+- name: Powershell  
+  hosts: all
+  tasks:
+    - name: Powershell
+      win_shell: echo Ansible >> C:\Users\prueba\Desktop\Ansible.txt
