@@ -1,0 +1,5 @@
+- name:  LNXPROWDFAPP02 
+  hosts: all
+  tasks:
+    - name: Comando 1
+      shell: echo "install cramfs /bin/true" > /etc/modprobe.d/CIS.conf | rmmod cramfs
