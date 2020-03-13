@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Comando 1
-      shell: sudo sh -c 'echo "install cramfs /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod cramfs'
+      shell: sudo sh -c 'echo "install cramfs /bin/true" >> /etc/modprobe.d/CIS.conf'
     - name: Comando 2
       shell: sudo sh -c 'echo "install freevxfs /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod freevxfs'
       
