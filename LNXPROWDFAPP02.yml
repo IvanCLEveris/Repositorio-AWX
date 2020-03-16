@@ -1,8 +1,11 @@
 - name:  LNXPROWDFAPP02 
   hosts: all
   tasks:
-    - name: Comando 1
+    - name: Install cramsf
       shell: sudo sh -c 'echo "install cramfs /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod cramfs'
-    - name: Comando 2
+    - name: Install freevxfs
       shell: sudo sh -c 'echo "install freevxfs /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod freevxfs'
-      
+    - name: Install jffs2
+      shell: sudo sh -c 'echo "install jffs2 /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod jffs2'      
+    - name: Install hfs
+      shell: sudo sh -c 'echo "install hfs /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod hfs'  
