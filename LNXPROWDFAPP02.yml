@@ -9,3 +9,9 @@
       shell: sudo sh -c 'echo "install jffs2 /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod jffs2'      
     - name: Install hfs
       shell: sudo sh -c 'echo "install hfs /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod hfs'  
+    - name: Install hfsplus
+      shell: sudo sh -c 'echo "install hfsplus /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod hfsplus'
+    - name: Install squashfs
+      shell: sudo sh -c 'echo "install squashfs /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod squashfs'      
+    - name: Install udf
+      shell: sudo sh -c 'echo "install udf /bin/true" >> /etc/modprobe.d/CIS.conf | rmmod udf'       
