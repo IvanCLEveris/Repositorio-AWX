@@ -1,0 +1,21 @@
+- name:  BLUPREWDFROB72 
+  hosts: all
+  tasks:
+  #   Account Policies
+    - name: Ensure 'Enforce password history' is set to '24 or more password(s)'
+      command: net accounts /uniquepw:24
+      
+    - name: Ensure 'Maximum password age' is set to '60 or fewer days, but not 0'
+      command: net accounts /maxpwage:60
+      
+    - name: Ensure 'Minimum password age' is set to '1 or more day(s)'
+      command: net accounts /minpwage:1
+      
+    - name: Ensure 'Minimum password length' is set to '14 or more character(s)'
+      command: net accounts /minpwlen:14
+      
+    - name: Ensure 'Account lockout duration' is set to '15 or more minute(s)'
+      command: net accounts /lockoutduration:15
+      
+    - name: Ensure 'Account lockout threshold' is set to '10 or fewer invalid logon attempt(s), but not 0'
+      command: net accounts /lockoutthreshold:10
