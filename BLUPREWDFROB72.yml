@@ -3,7 +3,7 @@
   tasks:
   #   Account Policies
     - name: Ensure 'Enforce password history' is set to '24 or more password(s)'
-      command: net accounts /uniquepw:24
+      win_command: net accounts /uniquepw:24
       
     - name: Ensure 'Maximum password age' is set to '60 or fewer days, but not 0'
       command: net accounts /maxpwage:60
