@@ -4,4 +4,4 @@
   #   Account Policies
   #   Account lockout duration must be greater than or equal to the value of Lockout observation window   
     - name: Ensure 'Account lockout duration' is set to '15 or more minute(s)'
-      win_command: net accounts /lockoutduration:15
+      win_command: net accounts /lockoutduration:30
